@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pawshake</title>
+  <link rel="stylesheet" href="static/css/aboutus style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<!-- when starting page loading icon -->
+  <link rel="icon" href="static/images/dog icon 1 ico.ico">
+
+  <style>
+    .button1 {
+    border-radius: 4px;
+    background-color: #1e74f4;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 19px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 110px;
+  }
+  
+  .button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button1:hover span {
+    padding-right: 25px;
+    color:white;
+  }
+  
+  .button1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+/* Style tab links */
+.tablink {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  float: left;
+  border: 2px solid black;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 30px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 80px 20px;
+ 
+}
+
+#sop {background-color:#777;}
+#wp {background-color: #777;}
+#faq {background-color: #777;}
+#prices {background-color: #777;}
+
+td, th {
+  border: 1px solid transparent;
+  text-align: left;
+  padding: 8px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+}
+  </style>
+
+
+  <body background="static/images/about us.jpg">
+
+    <!-- invisble taskbar-->
+	<nav id="nav7" class="navbar navbar-expand-sm bg-transparent justify-content-start">
+		<a class="navbar-brand" href="/" style="color: rgb(255, 255, 255);">
+		<img src="static/images/dog icon 1.png" alt="logo" style="width:40px;"><b>Pawshake</b></a>
+	
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown">
+					<a class="nav-link" href="#" style="color :transparent;">-------------------------
+						-----------------------------------------------</a>
+					</li>
+					<li class="nav-item">
+						<a class="btn btn-one" href="/" style="line-height: 50px;height: 50px;text-align: center;width: 150px;cursor: pointer;">
+						  <span style="color: white">Home</span>
+						</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-one" href="/booking#typese" style="line-height: 50px;height: 50px;text-align: center;width: 200px;cursor: pointer;">
+            <span style="color: white">Types of Service</span>
+          </a>
+      </li>
+				<li class="nav-item">
+						<a class="btn btn-one" href="/#section1" style="line-height: 50px;height: 50px;text-align: center;width: 200px;cursor: pointer;">
+						  <span style="color: white">Pet Owner Reviews</span>
+						</a>
+				</li>
+			
+				<li class="nav-item">
+						<a class="btn btn-one" href="/#section2" style="line-height: 50px;height: 50px;text-align: center;width: 200px;cursor: pointer;">
+						  <span style="color: white">Blog</span>
+						</a>
+				</li>
+				
+				<li class="nav-item dropdown">
+						<a class="btn btn-one" href="/contactus" style="line-height: 50px;height: 50px;text-align: center;width: 150px;cursor: pointer;">
+						  <span style="color: white">Contact Us</span>
+						</a>
+				</li>
+				
+				
+			</ul>
+		</nav>
+ 
+    <p class="float-right" style="color: white; margin-right: 100px;font-size: 50px;"><b>About Pawshake</b></p>
+<br>
+<br>
+
+    <!--Booking Square Div at the top-->
+      <div class="card card-two col-sm-4 text-light bg-transparent" style=" margin-left: 850px; margin-top: 50px; border: 2px solid rgb(255, 255, 255); border-radius: 30px;">
+		<div class="card-body">
+				<h4>You have come to the right place 
+			to book your dog services
+		</h4>
+		<br>
+		<h5>Hardly any of us have the luxury of being
+			 able to spare a few time to stay and connect
+			 with our dog.. Doggy day walks and visits can 
+			 Substantially help  unsaden your dog.
+    </h5>
+    <br>
+      <a href="#section3" class="button1 btn"><span>Browse</span></a>
+
+		</div>
+        </div>
+
+        <img src="static/images/dog Face.png" style="width: 120px;margin-top: -20px;">
+ 
+<div id="section3" class="about us context" style="margin-left: 10px; margin-right:10px; margin-top: 170px; border: 4px solid black;">
+<button class="tablink" onclick="openPage('sop', this, '#777')" id="defaultOpen">Services on Pawshake</button>
+<button class="tablink" onclick="openPage('wp', this, '#777')">Why Pawshake?</button>
+<button class="tablink" onclick="openPage('faq', this, '#777')">FAQ</button>
+<button class="tablink" onclick="openPage('prices', this, '#777')">Pricing</button>
+
+<div id="sop" class="tabcontent">
+  <br>
+  <p>The services that we provide are dog walking and pet visits.
+     If you would more information the click on the<a href="/booking#typese">link</a></p>
+</div>
+
+<div id="wp" class="tabcontent">
+  <br>
+  <p>Pawshake started in early 2020 promoting all dog lovers. We provide excellency with dogs and in proof click the <a href="/#section1">link</a> to view pet owner reviews.</p> 
+</div>
+
+<div id="faq" class="tabcontent">
+ <br>
+  <p>Is Pawshake reliable? Yes</p>
+  <p>Has there been any incident with dogs? No</p>
+  <p>Are Pawshake prices reasonable? yes</p>
+  <p>Is it easy for dogs to adjust with a new dog walker? Yes</p>
+</div>
+<div id="prices" class="tabcontent">
+   <br>
+  <p>Our Pawshake prices vary based on the dog service and times per week, the customer chooses. Usually it is a pretty 
+    reasonable price.</p>
+</div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-expand-sm bg-info">
+	<table>
+		<tr>
+		  <th><a class="btn" style="margin-left: -13px;" href="/">Home</a></th>
+		  <th><a class="btn" style="margin-left: -13px;" href="/#section1">Pet Owner reviews</a></th>
+		  <th><a class="btn" style="margin-left: -13px;" href="/#section2">Blog</a></th>
+		  <th><a class="btn" style="margin-left: -13px;" href="/aboutus">About Pawshake</a></th>
+		  <th><a class="btn" style="margin-left: -13px;"href="/contactus">Contact Us</a></th>
+		</tr>
+		<tr>
+		  <td>Dog Walking</td>
+		  <td>Jackson</td>
+		  <td>Training your dog to run faster</td>
+		  <td>Services on Pawshake</td>
+		  <td>Request Clarification</td>
+		</tr>
+		<tr>
+		  <td>Pet Visit</td>
+		  <td>Whitey</td>
+		  <td>Dog tricks for beginners</td>
+		  <td>Why Pawshake?</td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>Bella</td>
+		  <td>How does Covid 19/Parvovirus works</td>
+		  <td>FAQ</td>
+		  <td><img src="static/images/coloured paw.png" style="width: 30px; margin-right: 40px;"><img src="static/images/coloured walking.png" style="width: 30px;">
+			<img src="static/images/coloured heart.png" style="width: 34px; margin-left: 40px;"></td>
+			<td><a href="#nav7"class="btn bg-primary"><img src="static/images/home.png" style="width: 30px;"></a></td>
+		</tr>
+		</table>
+		
+	</ul>
+</nav>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<script>
+	//scroll to top everytime refresh button is pressed	
+	$(document).ready(function(){
+                $(this).scrollTop(0);
+            }); 
+
+			window.onscroll = function() {myFunction()};
+		</script>
+
+</body>
+</html>

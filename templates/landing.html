@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pawshake</title>
+  <link rel="stylesheet" href="static/css/landing style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<!-- when starting page loading icon -->
+  <link rel="icon" href="static/images/dog icon 1 ico.ico">
+
+  <style>
+body {
+  font-family: cambria;
+	  }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+}
+
+td, th {
+  border: 1px solid transparent;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: transparent;
+}
+
+  </style>
+
+</head>
+
+<body background="static/images/dog 1.jpg">
+	<!-- invisble taskbar-->
+	<nav id="home1" class="navbar navbar-expand-sm bg-transparent justify-content-start">
+		<a class="navbar-brand" href="" style="color: black;">
+		<img src="static/images/dog icon 1 ico.ico" alt="logo" style="width:40px;"><b>Pawshake</b></a>
+	
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown">
+					<a class="nav-link" href="#" style="color :transparent;">-------------------------
+						-----------------------------------------------</a>
+					</li>
+					<li class="nav-item">
+						<a class="btn btn-one" href="/booking#typese" style="line-height: 50px;height: 50px;text-align: center;width: 180px;cursor: pointer;">
+						  <span>Types of service</span>
+						</a>
+				</li>
+				<li class="nav-item">
+						<a class="btn btn-one" href="#section1" style="line-height: 50px;height: 50px;text-align: center;width: 200px;cursor: pointer;">
+						  <span>Pet Owner Reviews</span>
+						</a>
+				</li>
+			
+				<li class="nav-item">
+						<a class="btn btn-one"  href="#section2" style="line-height: 50px;height: 50px;text-align: center;width: 150px;cursor: pointer;">
+						  <span>Blog</span>
+						</a>
+				</li>
+				<li class="nav-item">
+						<a class="btn btn-one" href="/aboutus" style="line-height: 50px;height: 50px;text-align: center;width: 200px;cursor: pointer;">
+						  <span>About Pawshake</span>
+						</a>
+				</li>
+				
+				<li class="nav-item dropdown">
+						<a class="btn btn-one" href="/contactus" style="line-height: 50px;height: 50px;text-align: center;width: 150px;cursor: pointer;">
+						  <span>Contact Us</span>
+						</a>
+				</li>
+				
+				
+			</ul>
+		</nav>
+	<h1 style="color: white; margin-left: 300px; margin-top: 80px; font-size: 50px;">Aussie's most trusted website to</h1>
+	<h1 style="color: white; margin-left: 220px; margin-bottom: -20px; margin-top: -20px;font-size: 50px;">provide Dog walking and visit services</h1>
+		
+			<a class="btn btn-three" href="/booking" style="line-height: 50px;height: 50px;text-align: center; color: transparent; width: 250px;cursor: pointer; margin-left: 540px; margin-top: 30px;">
+			</a>
+		  <div class="btn btn-two" style="line-height: 50px;height: 50px;text-align: center; color: black; width: 250px;cursor: pointer; margin-left: 540px; margin-top: -90px;">
+			<p style="font-size: 20px;"><b>Request a Pet Job</b></p>
+		  </div>
+		  <!-- First Icon -->
+		  <div class="firsticon">
+		  <img src="static/images/non-coloured paw.png" style="width: 40px; margin-left: 250px; margin-top: 190px;">
+		  </div>
+		  <div class="RSPCA text" style="margin-bottom: -32px; margin-left: 360px;"></div>
+		  <p style="margin-left: 300px; font-size: 20px;"><b>RSPCA</b></p>
+		 </div>
+		 
+		  <!-- Second Icon -->
+		  <div class="secondicon">
+			<img src="static/images/non-coloured walking.png" style="width: 50px; margin-left: 670px; margin-top: -105px;">
+			</div>
+			<div class="Pet Services text" style="margin-bottom: -71px; margin-left: 360px;"></div>
+		    <p style="margin-left: 730px; font-size: 20px;"><b>Pet Services</b></p>
+		    </div>
+
+			<!-- Third Icon -->
+			<div class="thirdicon">
+			<img src="static/images/heart.png" style="width: 50px; margin-left: 1030px; margin-top: -103px;">
+			</div>
+			<div class="Pet Care text" style="margin-bottom: -71px; margin-left: 360px;"></div>
+		    <p style="margin-left: 1080px; font-size: 20px;"><b>Pet Care</b></p>
+		    </div>
+			<!--Pet Owner Reviews-->
+			<div id="section1" class="Pet Owner Reviews" style="margin-left: 40px; margin-right:40px; margin-top:110px; border: 4px solid black;">
+				<button class="tablink" onclick="openPage('Jackson', this, '#777')"id="defaultOpen">Jackson</button>
+				<button class="tablink" onclick="openPage('Whitey', this, '#777')" >Whitey</button>
+				<button class="tablink" onclick="openPage('Bella', this, '#777')">Bella</button>
+				<button class="tablink" onclick="openPage('Whiskey', this, '#777')">Whiskey</button>
+				<!--FIRST CAROUSEL-->
+				<div id="Jackson" class="tabcontent">
+				  <img src="static/images/hannah 1.png" style="margin-left: 160px; margin-top: 10px;">
+				  <br>
+				  <img src="static/images/star.png" style="width: 30px; margin-left: 100px; margin-right: 10px;">
+				  <img src="static/images/star.png" style="width: 30px; margin-right: 10px;">
+				  <img src="static/images/star.png" style="width: 30px; margin-right: 10px;">
+				  <img src="static/images/star.png" style="width: 30px; margin-right: 10px;">
+				  <img src="static/images/star.png" style="width: 30px; margin-right: 10px;">
+				  <p style="margin-right: 820px; margin-left: 60px;">Maddi is a fantastic dog sitter and dog walker. She was available on short notice,
+					   and is friendly, has clear communication, and clearly loves dogs. She took our dog
+						for long walks/runs and he came back tired and happy. When our dog Basil sees Aoife, 
+						he’s smiley and happy and clearly loves his time with her. I highly recommend Aoife as a dog walker and dog sitter.
+
+					- Hannah</p>
+
+					<div class="col-lg-8" style="margin-left:460px; margin-top: -300px; margin-bottom: 50px;">
+						<div class="card bg-transparent" style="border: none; margin-right: 20px;">
+						<div class="card-body text-center">
+					   
+				  <div id="demo" class="carousel slide" data-ride="carousel">
+				  <!--Indicators-->
+					<ul class="carousel-indicators">
+					  <li data-target="#demo" data-slide-to="0" class="active"></li>
+					  <li data-target="#demo" data-slide-to="1"></li>
+					  <li data-target="#demo" data-slide-to="2"></li>
+					  </ul>
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<img src="static/images/golden retriever wallpaper.JPG"  style="height:530px; width: 280px; margin-right: 15px;">
+						<img src="static/images/golden retriever lonely walking wallpaper.JPG"  style="height:530px; width: 280px;">
+						</div> 
+					  
+                    
+					  <div class="carousel-item">
+						<img src="static/images/big dog leash.jpg"  style=" height:530px; width: 631px;"> 
+						</div>
+					
+						<div class="carousel-item">
+						<img src="static/images/south-End-Dog-Session_0016.jpg" style="height: 530px; width: 730px;">
+						</div>
+						</div>
+					  
+					</div>
+					<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					  <span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#demo" data-slide="next">
+					  <span class="carousel-control-next-icon"></span>
+					</a>
+				  </div>
+					  </div>
+						</div>
+						</div>
+
+				
+				<!--SECOND CAROUSEL-->
+				<div id="Whitey" class="tabcontent">
+
+					<img src="static/images/curly jevi 3.png" style="width: 100px; margin-left: 160px; margin-top: 10px;">
+				  <br>
+				  <img src="static/images/star.png" style="width: 30px; margin-left: 100px; margin-right: 10px;">
+				  <img src="static/images/star.png" style="width: 30px; margin-right: 10px;">
+				  <img src="static/images/star.png" style="width: 30px; margin-right: 10px;">
+				  <img src="static/images/star.png" style="width: 30px; margin-right: 10px;">
+				  <img src="static/images/star.png" style="width: 30px; margin-right: 10px;">
+				  <p style="margin-right: 900px; margin-left: 70px;">Casey is anamazing dog sitter and dog walker. He was available on short notice,
+					   and is friendly, has clear communication, and clearly loves dogs. He took our dog
+						for long walks/runs and he came back tired and happy. When our dog Basil sees Casey, 
+						he’s smiley and happy and clearly loves his time with her. I highly recommend Casey as a dog walker and dog sitter.
+
+					- Jevi</p>
+
+					<div class="col-lg-8" style="margin-left:460px; margin-top: -350px; margin-bottom: 50px;">
+						<div class="card bg-transparent" style="border: none; margin-right: 20px;">
+						<div class="card-body text-center">
+					   
+				  <div id="demo1" class="carousel slide" data-ride="carousel">
+				  <!--Indicators-->
+					<ul class="carousel-indicators">
+					  <li data-target="#demo1" data-slide-to="0" class="active"></li>
+					  <li data-target="#demo1" data-slide-to="1"></li>
+					  <li data-target="#demo1" data-slide-to="2"></li>
+					</ul>
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<img src="static/images/dog-animals-siberian-husky-water-wallpaper-preview.jpg"  style="height:450px; width: 680px;">
+					  </div>
+						<div class="carousel-item">
+						<img src="static/images/reviews.jpg" style="height: 450px; width: 500px;">
+					 </div>
+
+					  <div class="carousel-item">
+						<img src="static/images/autumn-grass-dog-walk-wallpaper-preview.jpg"  style="height:450px; width: 680px;">
+						</div>
+					
+						</div>
+					  
+					</div>
+					<a class="carousel-control-prev" href="#demo1" data-slide="prev">
+					  <span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#demo1" data-slide="next">
+					  <span class="carousel-control-next-icon"></span>
+					</a>
+				  </div>
+					  </div>
+						</div>
+
+				</div>
+				<!--THIRD CAROUSEL-->
+				<div id="Bella" class="tabcontent">
+					
+					<img src="static/images/caroline 1.png" style="width: 80px; margin-left: 160px; margin-top: 10px;">
+				  <br>
+				  <img src="static/images/star.png" style="width: 30px; margin-left: 100px; margin-right: 10px;">
+				  <img src="static/images/star.png" style="width: 30px; margin-right: 10px;">
+				  <img src="static/images/star.png" style="width: 30px; margin-right: 10px;">
+				  <img src="static/images/star.png" style="width: 30px; margin-right: 10px;">
+				  <img src="static/images/star.png" style="width: 30px; margin-right: 10px;">
+				  <p style="margin-right: 900px; margin-left: 70px;">Callie is a fantastic dog sitter and dog walker. She was available on short notice,
+					   and is friendly, has clear communication, and clearly loves dogs. She took our dog
+						for long walks/runs and he came back tired and happy. When our dog Basil sees Callie, 
+						he’s smiley and happy and clearly loves his time with her. I highly recommend Callie as a dog walker and dog sitter.
+
+					- Caroline</p>
+
+					<div class="col-lg-8" style="margin-left:460px; margin-top: -350px; margin-bottom: 50px;">
+						<div class="card bg-transparent" style="border: none; margin-right: 20px;">
+						<div class="card-body text-center">
+					   
+				  <div id="demo2" class="carousel slide " data-ride="carousel">
+				  <!--Indicators-->
+					<ul class="carousel-indicators">
+					  <li data-target="#demo2" data-slide-to="0" class="active"></li>
+					  <li data-target="#demo2" data-slide-to="1"></li>
+					  <li data-target="#demo2" data-slide-to="2"></li>
+					</ul>
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<img src="static/images/p1170f2271a64593960597cc428fa951c.jpg"  style="height:450px; width: 278px; margin-right: 15px;">
+						<img src="static/images/pLabradoodle-1.jpg"  style="height:450px; width: 233px;"> 
+					  </div>
+
+					  <div class="carousel-item">
+						<img src="static/images/dog-beach-tropic.jpg" style="height: 450px; width: 650px;">
+						
+						</div>
+					
+						<div class="carousel-item">
+						<img src="static/images/labradoodle in forest.jpg"  style=" height:450px; width: 650px;">
+						
+						</div>
+						</div>
+					  
+					</div>
+					<a class="carousel-control-prev" href="#demo2" data-slide="prev">
+					  <span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#demo2" data-slide="next">
+					  <span class="carousel-control-next-icon"></span>
+					</a>
+				  </div>
+					  </div>
+						</div>
+					
+				</div>
+				<!--FOURTH CAROUSEL-->
+				<div id="Whiskey" class="tabcontent">
+					
+					<img src="static/images/bald jevi 3.png" style="width: 100px; margin-left: 160px; margin-top: 10px;">
+					<br>
+					<img src="static/images/star.png" style="width: 30px; margin-left: 100px; margin-right: 10px;">
+					<img src="static/images/star.png" style="width: 30px; margin-right: 10px;">
+					<img src="static/images/star.png" style="width: 30px; margin-right: 10px;">
+					<img src="static/images/star.png" style="width: 30px; margin-right: 10px;">
+					<img src="static/images/star.png" style="width: 30px; margin-right: 10px;">
+					<p style="margin-right: 900px; margin-left: 70px;">Corey is a fantastic dog sitter and dog walker. She was available on short notice,
+						 and is friendly, has clear communication, and clearly loves dogs. She took our dog
+						  for long walks/runs and he came back tired and happy. When our dog Basil sees Corey, 
+						  he’s smiley and happy and clearly loves his time with her. I highly recommend Corey as a dog walker and dog sitter.
+  
+					  - Andre</p>
+  
+					  <div class="col-lg-8" style="margin-left:460px; margin-top: -350px; margin-bottom: 50px;">
+						  <div class="card bg-transparent" style="border: none; margin-right: 20px;">
+						  <div class="card-body text-center">
+						 
+					<div id="demo3" class="carousel slide" data-ride="carousel">
+					<!--Indicators-->
+					  <ul class="carousel-indicators">
+						<li data-target="#demo3" data-slide-to="0" class="active"></li>
+						<li data-target="#demo3" data-slide-to="1"></li>
+						<li data-target="#demo3" data-slide-to="2"></li>
+					  </ul>
+					  <div class="carousel-inner">
+						<div class="carousel-item active">
+						  <img src="static/images/4135f407dc1bbf918b2b46ff5bfc90d8.jpg"  style="height:450px; width: 450px; margin-right: 15px;">
+						  <div class="carousel-caption">
+						  </div> 
+						</div>
+  
+						<div class="carousel-item">
+							<img src="static/images/dog at sea.jpg"  style="height:450px; width: 496px;">
+						  <div class="carousel-caption">
+						  </div> 
+						  </div>
+					  
+						  <div class="carousel-item">
+						  <img src="static/images/dog-on-beach-enjoying_1293532866.jpg"  style=" height:450px; width: 612px;">
+						  
+						  </div>
+						  </div>
+						
+					  </div>
+					  <a class="carousel-control-prev" href="#demo3" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					  </a>
+					  <a class="carousel-control-next" href="#demo3" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					  </a>
+					</div>
+						</div>
+						  </div>
+
+				</div>
+				</div>
+				
+				<script>
+				//Pet owner reviews div
+				function openPage(pageName,elmnt,color) {
+				  var i, tabcontent, tablinks;
+				  tabcontent = document.getElementsByClassName("tabcontent");
+				  for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				  }
+				  tablinks = document.getElementsByClassName("tablink");
+				  for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].style.backgroundColor = "";
+				  }
+				  document.getElementById(pageName).style.display = "block";
+				  elmnt.style.backgroundColor = color;
+				}
+				// Get the element with id="defaultOpen" and click on it (Pet Owner Reviews)
+				document.getElementById("defaultOpen").click();
+			//scroll to top everytime refresh button is pressed	
+			$(document).ready(function(){
+                $(this).scrollTop(0);
+            }); 
+
+			window.onscroll = function() {myFunction()};
+		</script>
+		
+	<!--Blog-->
+	<br>
+	<div class=" bg-secondary">
+			<h1 id="section2" style="color: rgb(255, 255, 255); margin-left: 630px; margin-top: 0px;">Blog</h1>
+
+			<table>
+				<tr>
+					<th>
+					<img src="static/images/about us wallpaper.jpg"  style=" height:320px; width: 411px;">
+					</th>
+           
+                    <th>
+					<img src="static/images/cf2ad828bf17a2055ad094fa892caf43.jpg"  style=" height:321px; width: 463px;">
+					</th>				
+					
+					<th>
+				    <img src="static/images/well-behaved-dogs-are-welcome-on-many-auckland-beaches.jpg"  style=" height:320px; width: 411px;">
+				    </th>
+				</tr>
+				<tr>
+					 <td><h4 style="margin-top: 5px; margin-left: 47px;">Training your dog to run faster</h4></td>
+					 <td><h4 style="margin-top: 5px; margin-left: 87px;">Dog tricks for beginners</h4></td>
+					 <td><h4 style="margin-top: 5px; margin-left: 10px;">How does Covid 19/Parvovirus works</h4></td>
+				 </tr>
+
+				 <tr>
+					<td><h4 style="margin-top: 0px; margin-left: 7px; font-size: 17px;">If you would like to train your dog to run faster,
+						then you should often take your dog to run in a friendly environment so that
+						your dog can relax and feel the nature, so that he/she is motivated to run faster.
+					    Other tricks are also avaible</h4></td>
+					<td><h4 style="margin-top: 0px; margin-left: 7px; font-size: 17px;">Dog tricks for beginners is very easy.
+						 First of all you and your dog needs to have a good relationship. You need to train your dog to stay quiet
+						all the time so that whenever he/she does something good then you reward them. That way
+					    they will automatically learn new tricks that you try to teach them.</h4></td>
+					<td><h4 style="margin-top: 3px; margin-left: 7px; font-size: 17px;">Covid 19 is a deadly virus that originated from china
+						taking thousands of lives including dogs. Good hygiene and daily wash of hands is suggested in order for you and your 
+						dog to stay safe.Parvovirus is another virus that is contagious and lots of dogs receive them from anywhere or
+						anything. If you suspect that your dog might have it then, immediate attention must be brought to them and they have to be 
+						taken to their primarily docter.
+					    </h4></td>
+				</tr>
+				 
+				 
+			</table>
+			
+    </div>
+			
+			<nav class="navbar navbar-expand-sm bg-info">
+				<table>
+					<tr>
+					  <th><a class="btn" style="margin-left: -13px;" href="/booking">Booking</a></th>
+					  <th><a class="btn" style="margin-left: -13px;" href="#section1">Pet Owner reviews</a></th>
+					  <th><a class="btn" style="margin-left: -13px;" href="#section2">Blog</a></th>
+					  <th><a class="btn" style="margin-left: -13px;" href="/aboutus">About Pawshake</a></th>
+					  <th><a class="btn" style="margin-left: -13px;" href="/contactus">Contact Us</a></th>
+					</tr>
+					<tr>
+					  <td>Dog Walking</td>
+					  <td>Jackson</td>
+					  <td>Training your dog to run faster</td>
+					  <td>Services on Pawshake</td>
+					  <td>Request Clarification</td>
+					</tr>
+					<tr>
+					  <td>Pet Visit</td>
+					  <td>Whitey</td>
+					  <td>Dog tricks for beginners</td>
+					  <td>Why Pawshake?</td>
+					</tr>
+					<tr>
+					  <td></td>
+					  <td>Bella</td>
+					  <td>How does Covid 19/Parvovirus works</td>
+					  <td>FAQ</td>
+					  <td><img src="static/images/coloured paw.png" style="width: 30px; margin-right: 40px;"><img src="static/images/coloured walking.png" style="width: 30px;">
+						<img src="static/images/coloured heart.png" style="width: 34px; margin-left: 40px;"></td>
+						<td><a href="#home1"class="btn bg-primary"><img src="static/images/home.png" style="width: 30px;"></a</td>
+					</tr>
+					</table>
+					
+				</ul>
+			</nav>		
+</body>
+</html>

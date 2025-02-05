@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pawshake</title>
+  <link rel="stylesheet" href="static/css/booking style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<!-- when starting page loading icon -->
+  <link rel="icon" href="static/images/dog icon 1 ico.ico">
+
+  <style>
+	 table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+}
+
+td, th {
+  border: 1px solid transparent;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: transparent;
+}
+#dogService {
+	width: 40%;
+}
+#WeeklyWalk {
+	width: 40%;
+}
+#PreferredD {
+	width: 40%;
+}
+#WalkT {
+	width: 40%;
+}
+#FName {
+	width: 40%;
+}
+#LName {
+	width: 40%;
+}
+#PNum {
+	width: 40%;
+}
+#EmailAd {
+	width: 40%;
+}
+#Street {
+	width: 40%;
+}
+#SuBurb {
+	width: 40%;
+}
+#PCode {
+	width: 40%;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 19px;
+    padding: 10px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  </style>
+</head>
+<body background="static/images/booking 1.jpg">
+  	<!-- invisble taskbar-->
+	<nav id="nav7" class="navbar navbar-expand-sm bg-transparent justify-content-start">
+		<a class="navbar-brand" href="/" style="color: rgb(255, 255, 255);">
+		<img src="static/images/dog icon 1.png" alt="logo" style="width:40px;"><b>Pawshake</b></a>
+	
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown">
+					<a class="nav-link" href="#" style="color :transparent;">-------------------------
+						-----------------------------------------------</a>
+					</li>
+					<li class="nav-item">
+						<a class="btn btn-one" href="/" style="line-height: 50px;height: 50px;text-align: center;width: 150px;cursor: pointer;">
+						  <span>Home</span>
+						</a>
+				</li>
+				<li class="nav-item">
+						<a class="btn btn-one" href="#typese" style="line-height: 50px;height: 50px;text-align: center;width: 200px;cursor: pointer;">
+						  <span>Types of Service</span>
+						</a>
+				</li>
+			
+				<li class="nav-item">
+						<a class="btn btn-one" href="/aboutus" style="line-height: 50px;height: 50px;text-align: center;width: 200px;cursor: pointer;">
+						  <span>About Pawshake</span>
+						</a>
+				</li>
+				
+				<li class="nav-item dropdown">
+						<a class="btn btn-one" href="/contactus" style="line-height: 50px;height: 50px;text-align: center;width: 150px;cursor: pointer;">
+						  <span>Contact Us</span>
+						</a>
+				</li>
+				
+				
+			</ul>
+		</nav>
+
+    <!--Booking Square Div at the top-->
+      <div class="card card-two col-sm-4 text-dark bg-transparent" style=" margin-left: 800px; margin-top: 50px; border: 2px solid black; border-radius: 30px;">
+		<div class="card-body">
+				<h4>You have come to the right place 
+			to book your dog services
+		</h4>
+		<br>
+		<h5>Hardly any of us have the luxury of being
+			 able to spare a few time to stay and connect
+			 with our dog.. Doggy day walks and visits can 
+			 Substantially help  unsaden your dog.
+		</h5>
+
+		<div class="box-2" style="margin-top: 30px; margin-left: 65px;margin-bottom: 10px;">
+			<a href="#typese" class="btn btn-three" style="line-height: 50px;height: 50px;text-align: center;width: 250px;cursor: pointer;">
+			  <p  style="margin-top: -6px;">Types of Service</p>
+			</a>
+		  </div>
+
+		</div>
+        </div>
+	 <!--End of Div-->
+	
+	 <!--Types of services-->
+
+	 <h2 id="typese" style="margin-left: 550px; margin-top: 290px;">Types of services</h2>  
+	 <div class="bservice1">
+	 <button class="btn" style="margin-left: 10px; margin-top: 10px; width: 650px; ">Dog Walking</button>   
+	 <button class="btn" style="margin-left: 10px; margin-top: 10px; width: 650px;">Dog Visits</button>  
+	 </div>
+	 
+	 <p style="margin-top: 10px; margin-left: 10px;"><b>0.5 hour private walk (1 dog)</b></p>
+	 <p style="margin-top: -10px; margin-left: 10px;"><b>1 hour private walk (1 dog)</b></p>
+     <p style="margin-top: -10px; margin-left: 10px;"><b>1 hour group walk (2 or 3 dogs)</b></p>
+	
+	 <p style="margin-top: -70px; margin-left: 670px;"><b>0.5 hour pet visit</b></p>
+	 <p style="margin-top: -70px; margin-left: 670px;"><b>1 hour pet visit</b></p>
+	 
+	 <div class="bservice2">
+		<button class="btn" data-toggle="collapse" data-target="#demo12" style="margin-left: 280px; margin-top: 50px; width: 100px;">Book</button>   
+		<button class="btn" data-toggle="collapse" data-target="#demo12" style="margin-left: 570px; margin-top: 50px; width: 100px;">Book</button>  
+		</div>
+
+<br>
+	
+			 
+		
+<div id="demo12" class="collapse">
+<br>
+<!--  border: 5px solid #00FFC5;-->
+<div class="card-deck">
+	<div class="card bg-transparent">
+	<div class="newstuff">
+	<div class="card-body" style="background-color: rgb(140, 187, 155);">
+	<br>
+	<br>
+  
+	<form action = "/continue" method="POST">
+        
+<p style="margin-top:-40px;"><b>Types of Service</b> <b style="margin-left: 650px;">First Name</b> </p>
+<select class="form-control" id="dogService" name="dogService">
+  <option value="0"></option>
+  <option value="1">0.5 hour private walk (1 dog)</option>
+  <option value="2">1 hour private walk (1 dog)</option>
+  <option value="3">1 hour group walk (2 dogs)</option>
+  <option value="4">1 hour group walk (3 dogs)</option>
+  <option value="5">0.5 hour pet visit (less than four dogs permitted)</option>
+  <option value="6">1 hour pet visit (less than four dogs permitted)</option>
+</select>
+	<input style="margin-left: 780px; margin-top: -38px;" type="text" class="form-control" id="FName" 
+	placeholder="Enter first name" name="FName">
+<br>
+<br>
+	<p style="margin-top:-40px;"><b>How many times per week to you want your dog to be walked?</b> <b
+		 style="margin-left: 300px;">Last Name</b> </p>
+
+	<select class="form-control" id="WeeklyWalk" name="WeeklyWalk">
+		<option value="0"></option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+	  </select>
+	<input style="margin-left: 780px; margin-top: -38px;" type="text" class="form-control" id="LName"
+	 placeholder="Enter last name" name="LName">
+<br>
+<br>
+	<p style="margin-top:-40px;"><b>Preferred days</b> <b style="margin-left: 665px;">Phone number</b> </p>
+	<select multiple class="form-control" id="PreferredD" name="PreferredD">
+  <option value="Monday">Monday</option>
+  <option value="Tuesday">Tuesday</option>
+  <option value="Wednesday">Wednesday</option>
+  <option value="Thursday">Thursday</option>
+  <option value="Friday">Friday</option>
+  <option value="Saturday">Saturday</option>
+  <option value="Sunday">Sunday</option>
+  <option value="Non-preferable">Non-preferable</option>
+  </select>
+	<input style="margin-left: 780px; margin-top: -108px; margin-bottom: 108px;" type="text" 
+	class="form-control" id="PNum" placeholder="Enter phone number" name="PNum">
+	<br>
+	<p style="margin-top:-40px;"><b>Preferred times</b></p>
+
+	<select multiple class="form-control" id="WalkT" name="WalkT">
+		<option value="6.00A.M">6.00A.M</option>
+		<option value="7.00A.M">7.00A.M</option>
+		<option value="8.00A.M">8.00A.M</option>
+		<option value="9.00A.M">9.00A.M</option>
+		<option value="10.00A.M">10.00A.M</option>
+		<option value="11.00A.M">11.00A.M</option>
+		<option value="12.00P.M">12.00P.M</option>
+		<option value="1.00P.M">1.00P.M</option>
+		<option value="2.00P.M">2.00P.M</option>
+		<option value="3.00P.M">3.00P.M</option>
+		<option value="4.00P.M">4.00P.M</option>
+		<option value="5.00P.M">5.00P.M</option>
+		<option value="6.00P.M">6.00P.M</option>
+  </select>
+	
+	
+  <p style="margin-left: 780px; margin-top: -228px; margin-bottom: 208px;"><b>Email address</b></p>
+  <input style="margin-left: 780px; margin-top: -198px; margin-bottom: 208px;" type="text" class="form-control" id="EmailAd" placeholder="Enter phone number" name="EmailAd">
+
+  <p style="margin-left: 780px; margin-top: -198px; margin-bottom: 208px;"><b>Street number and name</b></p>
+  <input style="margin-left: 780px; margin-top: -198px; margin-bottom: 208px;" type="text" class="form-control" id="Street" placeholder="Enter street number and name" name="Street">
+
+  <p style="margin-left: 780px; margin-top: -198px; margin-bottom: 208px;"><b>Suburb</b></p>
+  <input style="margin-left: 780px; margin-top: -198px; margin-bottom: 208px;" type="text" class="form-control" id="SuBurb" placeholder="Enter suburb" name="SuBurb">
+
+  <p style="margin-left: 780px; margin-top: -198px; margin-bottom: 208px;"><b>Postcode</b></p>
+  <input style="margin-left: 780px; margin-top: -198px; margin-bottom: 10px;" type="text" class="form-control" id="PCode" placeholder="Enter postcode" name="PCode">
+
+  <button class="button"><span>Continue</span></button>
+
+ </form>
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+ </div> 	
+
+
+	 {% block content %}
+        {% if play %}  <!-- your conditional goes inside the block.  This will only display if tickets = True -->
+		<div class="shadow-lg p-4 mb-4 bg-white">
+			<h3>Booking details</h3>
+			<table style="color: black;">
+            <tr>
+				 <th><p><b>Preferred service:</b></p></th>
+				 <th><p>{{dogService}}</p></th>
+			</tr>	 
+			<tr>
+				<th><p><b>Preferred days:</b></p></th>
+				<th><p>{{PreferredD}}</p></th>
+			</tr>
+			<tr>
+				 <th><p><b>Preferred times:</b></p></th>
+				 <th><p>{{WalkT}}</p></th>
+			</tr>
+			<tr>
+				 <th><p><b>Weekly walk:</b></p></th>
+				 <th><p>{{WeeklyWalk}}</p></th>
+
+			 </tr>
+			 <tr>
+				<th><p><b>Toyal Weekly cost:</b></p></th>
+				<th><p>${{cost1}}</p></th>
+
+			</tr>
+
+		</table>
+		</div>
+		<br>
+		<div class="shadow-lg p-4 mb-4 bg-white">
+			<h3>Profile details</h3>
+			<table style="color: black;">
+             <tr>
+				 <th><p><b>Name:</b></p></th>
+				 <th><p>{{FName}} {{LName}}</p></th>
+			 </tr>
+			<tr>
+				 <th><p><b>Phone number:</b></p></th>
+				 <th><p>{{PNum}}</p></th>
+			</tr>	 
+			<tr>
+				<th><p><b>Email address days:</b></p></th>
+				<th><p>{{EmailAd}}</p></th>
+			</tr>
+			<tr>
+				 <th><p><b>Street number and name:</b></p></th>
+				 <th><p>{{Street}}</p></th>
+			</tr>
+			<tr>
+				<th><p><b>Suburb:</b></p></th>
+				<th><p>{{SuBurb}}</p></th>
+
+			</tr>
+			<tr>
+				<th><p><b>Postcode:</b></p></th>
+				<th><p><b>{{PCode}}</b></p></th>
+
+			</tr>
+
+		</table>
+	    </div>
+		{% endif %}
+{% endblock content %}
+
+ 
+
+<nav class="navbar navbar-expand-sm bg-info">
+	<table>
+		<tr>
+		  <th><a class="btn" style="margin-left: -13px;" href="/">Home</a></th>
+		  <th><a class="btn" style="margin-left: -13px;" href="/#section1">Pet Owner reviews</a></th>
+		  <th><a class="btn" style="margin-left: -13px;" href="/#section2">Blog</a></th>
+		  <th><a class="btn" style="margin-left: -13px;" href="/aboutus">About Pawshake</a></th>
+		  <th><a class="btn" style="margin-left: -13px;"href="/contactus">Contact Us</a></th>
+		</tr>
+		<tr>
+		  <td>Dog Walking</td>
+		  <td>Jackson</td>
+		  <td>Training your dog to run faster</td>
+		  <td>Services on Pawshake</td>
+		  <td>Request Clarification</td>
+		</tr>
+		<tr>
+		  <td>Pet Visit</td>
+		  <td>Whitey</td>
+		  <td>Dog tricks for beginners</td>
+		  <td>Why Pawshake?</td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>Bella</td>
+		  <td>How does Covid 19/Parvovirus works</td>
+		  <td>FAQ</td>
+		  <td><img src="static/images/coloured paw.png" style="width: 30px; margin-right: 40px;"><img src="static/images/coloured walking.png" style="width: 30px;">
+			<img src="static/images/coloured heart.png" style="width: 34px; margin-left: 40px;"></td>
+			<td><a href="#nav7"class="btn bg-primary"><img src="static/images/home.png" style="width: 30px;"></a></td>
+		</tr>
+		</table>
+		
+	</ul>
+</nav>	
+
+<script>
+	//scroll to top everytime refresh button is pressed	
+	$(document).ready(function(){
+                $(this).scrollTop(0);
+            }); 
+
+			window.onscroll = function() {myFunction()};
+		</script>
+
+
+</body>
+</html> 
